@@ -1,28 +1,43 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+    <div id="app">
+        <AtlanWork />
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+    import AtlanWork from './components/atlanwork.vue'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+    export default {
+        name: 'App',
+        components: {
+            AtlanWork
+        }
+    }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+    /* Normalizing the document (for each component) */
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Adding fonts */
+
+    @font-face {
+        font-family: Lovelo-Black;
+        src: url('../public/fonts/Lovelo/Lovelo-Black.ttf');
+    }
+
+
+    #app {
+        font-family: Lovelo-Black;
+        /* font-family: Avenir, Helvetica, Arial, sans-serif; */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-align: center;
+        color: #fff;
+
+    }
 </style>
