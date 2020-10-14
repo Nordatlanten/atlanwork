@@ -28,6 +28,7 @@
 export default {
   created() {
     this.$store.commit("toggleBig");
+    this.$store.commit("toggleFloatUp");
   },
   computed: {
     bigOn() {
